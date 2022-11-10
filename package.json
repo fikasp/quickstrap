@@ -1,13 +1,11 @@
 {
   "name": "quickstrap",
   "version": "1.0.0",
-  "description": "",
   "main": "index.html",
   "scripts": {
     "start": "gulp"
   },
   "author": "ARW",
-  "license": "ISC",
   "dependencies": {
     "gulp-cli": "^2.3.0"
   },
