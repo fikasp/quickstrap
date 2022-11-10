@@ -1,0 +1,266 @@
+.full {
+    flex-basis: 100%;
+    @include flex;
+}
+
+.flex {
+    width: 100%;
+    margin: 0 auto;
+    @include flex;
+
+    @include medium-up {
+        width: 80%;
+        max-width: $width-m;
+    }
+    @include large-up {
+        width: 60%;
+        max-width: $width-l;
+    }
+}
+
+// small
+.fs {
+    @include flex;
+    // small
+    &0 {
+        display: none;
+    }
+    &1 {
+        @include flex;
+        flex-basis: 8.33%;
+    }
+    &2 {
+        @include flex;
+        flex-basis: 16.66%;
+    }
+    &3 {
+        @include flex;
+        flex-basis: 25%;
+    }
+    &4 {
+        @include flex;
+        flex-basis: 33.33%;
+    }
+    &5 {
+        @include flex;
+        flex-basis: 41.66%;
+    }
+    &6 {
+        @include flex;
+        flex-basis: 50%;
+    }
+    &7 {
+        @include flex;
+        flex-basis: 58.33%;
+    }
+    &8 {
+        @include flex;
+        flex-basis: 66.66%;
+    }
+    &9 {
+        @include flex;
+        flex-basis: 75%;
+    }
+    &10 {
+        @include flex;
+        flex-basis: 83.33%;
+    }
+    &11 {
+        @include flex;
+        flex-basis: 91.66%;
+    }
+    &12 {
+        @include flex;
+        flex-basis: 100%;
+    }
+}
+
+// medium
+.fm {
+    @include flex;
+    // small
+    &0 {
+        @include medium-up {
+            display: none;
+        }
+    }
+    &1 {
+        @include medium-up {
+            @include flex;
+            flex-basis: 8.33%;
+        }
+    }
+    &2 {
+        @include medium-up {
+            @include flex;
+            flex-basis: 16.66%;
+        }
+    }
+    &3 {
+        @include medium-up {
+            @include flex;
+            flex-basis: 25%;
+        }
+    }
+    &4 {
+        @include medium-up {
+            @include flex;
+            flex-basis: 33.33%;
+        }
+    }
+    &5 {
+        @include medium-up {
+            @include flex;
+            flex-basis: 41.66%;
+        }
+    }
+    &6 {
+        @include medium-up {       
+            @include flex;
+            flex-basis: 50%;
+        }
+    }
+    &7 {
+        @include medium-up {
+            @include flex;
+            flex-basis: 58.33%;
+        }
+    }
+    &8 {
+        @include medium-up {
+            @include flex;
+            flex-basis: 66.66%;
+        }
+    }
+    &9 {
+        @include medium-up {
+            @include flex;
+            flex-basis: 75%;
+        }
+    }
+    &10 {
+        @include medium-up {
+            @include flex;
+            flex-basis: 83.33%;
+        }
+    }
+    &11 {
+        @include medium-up {
+            @include flex;
+            flex-basis: 91.66%;
+        }
+    }
+    &12 {
+        @include medium-up {
+            @include flex;
+            flex-basis: 100%;
+        }
+    }
+}
+
+// large
+.fl {
+    @include flex;
+    // small
+    &0 {
+        @include large-up {
+            display: none;
+        }
+    }
+    &1 {
+        @include large-up {
+            @include flex;
+            flex-basis: 8.33%;
+        }
+    }
+    &2 {
+        @include large-up {
+            @include flex;
+            flex-basis: 16.66%;
+        }
+    }
+    &3 {
+        @include large-up {
+            @include flex;
+            flex-basis: 25%;
+        }
+    }
+    &4 {
+        @include large-up {
+            @include flex;
+            flex-basis: 33.33%;
+        }
+    }
+    &5 {
+        @include large-up {
+            @include flex;
+            flex-basis: 41.66%;
+        }
+    }
+    &6 {
+        @include large-up {       
+            @include flex;
+            flex-basis: 50%;
+        }
+    }
+    &7 {
+        @include large-up {
+            @include flex;
+            flex-basis: 58.33%;
+        }
+    }
+    &8 {
+        @include large-up {
+            @include flex;
+            flex-basis: 66.66%;
+        }
+    }
+    &9 {
+        @include large-up {
+            @include flex;
+            flex-basis: 75%;
+        }
+    }
+    &10 {
+        @include large-up {
+            @include flex;
+            flex-basis: 83.33%;
+        }
+    }
+    &11 {
+        @include large-up {
+            @include flex;
+            flex-basis: 91.66%;
+        }
+    }
+    &12 {
+        @include large-up {
+            @include flex;
+            flex-basis: 100%;
+        }
+    }
+}
+
+.jcs {
+    justify-content: flex-start;
+}
+
+.jcc {
+    justify-content: center;
+}
+
+.jce {
+    justify-content: flex-end;
+}
+
+.acs {
+    align-content: flex-start;
+}
+
+.ace {
+    align-content: flex-end;
+}
+
+.aic {
+    align-items: center;
+}

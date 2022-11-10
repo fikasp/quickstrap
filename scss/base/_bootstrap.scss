@@ -1,0 +1,88 @@
+// colors
+$white:    #ffffff;
+$gray-100: #eeeeee;
+$gray-200: #dddddd;
+$gray-300: #cccccc;
+$gray-400: #bbbbbb;
+$gray-500: #aaaaaa;
+$gray-600: #888888;
+$gray-700: #666666;
+$gray-800: #444444;
+$gray-900: #222222;
+$blue:     #0d6efd;
+$indigo:   #6610f2;
+$purple:   #6f42c1;
+$pink:     #d63384;
+$red:      #dc3545;
+$orange:   #fd7e14;
+$yellow:   #ffc107;
+$green:    #198754;
+$teal:     #20c997;
+$cyan:     #0dcaf0;
+$black:    #000000;
+// themes
+$primary:   $blue;
+$secondary: $gray-500;
+$success:   $green;
+$info:      $cyan;
+$warning:   $yellow;
+$danger:    $red;
+$light:     $gray-200;
+$dark:      $gray-800;
+
+// body
+$body-bg:         $black;
+$body-color:      $white;
+$body-text-align: center;
+
+// fonts
+$font-family-sans-serif: $font-family;
+
+/*!
+ * Bootstrap v5.0.2 (https://getbootstrap.com/)
+ */
+
+// Configuration
+@import "./bootstrap/functions";
+@import "./bootstrap/variables";
+@import "./bootstrap/mixins";
+@import "./bootstrap/utilities";
+
+// Layout & components
+@import "./bootstrap/root";
+// @import "./bootstrap/reboot";
+// @import "./bootstrap/type";
+// @import "./bootstrap/images";
+@import "./bootstrap/containers";
+// @import "./bootstrap/grid";
+@import "./bootstrap/tables";
+// @import "./bootstrap/forms";
+@import "./bootstrap/buttons";
+@import "./bootstrap/transitions";
+// @import "./bootstrap/dropdown";
+// @import "./bootstrap/button-group";
+// @import "./bootstrap/nav";
+// @import "./bootstrap/navbar";
+// @import "./bootstrap/card";
+// @import "./bootstrap/accordion";
+// @import "./bootstrap/breadcrumb";
+// @import "./bootstrap/pagination";
+// @import "./bootstrap/badge";
+// @import "./bootstrap/alert";
+// @import "./bootstrap/progress";
+// @import "./bootstrap/list-group";
+// @import "./bootstrap/close";
+// @import "./bootstrap/toasts";
+// @import "./bootstrap/modal";
+// @import "./bootstrap/tooltip";
+// @import "./bootstrap/popover";
+// @import "./bootstrap/carousel";
+// @import "./bootstrap/spinners";
+// @import "./bootstrap/offcanvas";
+
+// Helpers
+// @import "./bootstrap/helpers";
+
+// Utilities
+@import "./bootstrap/utilities/api";
+

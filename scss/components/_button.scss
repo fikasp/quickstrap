@@ -1,0 +1,55 @@
+.bt {
+    border: none;
+    border-radius: calc($radius/2);
+    display: inline-block;
+    font-weight: 700;
+    font-size: $font-size;
+    line-height: $line-height;
+    padding: .5rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all .25s ease-in-out;
+    width: 200px;
+    cursor: pointer;
+    &:hover {
+        text-decoration: none;
+        color: $white;
+    }
+
+    &1 {
+        background-color: $base;
+        color: $base-light;
+        @extend .bt;
+        &:hover {
+            @include bg-darken($base);
+        }
+    }
+
+    &2 {
+        background-color: $sup;
+        color: $sup-light;
+        @extend .bt;
+        &:hover {
+            @include bg-darken($sup);
+        }
+    }
+
+    &3 {
+        background-color: $sub;
+        color: $sub-light;
+        @extend .bt;
+        &:hover {
+            @include bg-darken($sub);
+        }
+    }
+
+    &o {
+        background-color: transparent;
+        border: 1px solid $gray-light;
+        color: $gray-light;
+        @extend .bt;
+        &:hover {
+            border: 1px solid darken($gray-light, 20%);
+        }
+    }
+}

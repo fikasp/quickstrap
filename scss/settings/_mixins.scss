@@ -1,0 +1,33 @@
+// Media
+@mixin medium-up {
+    @media (min-width: #{$media-m}) {
+        @content;
+    }
+}
+
+@mixin large-up {
+    @media (min-width: #{$media-l}) {
+        @content;
+    }
+}
+
+@mixin bg-darken ($color, $value: 10%) {
+    background: darken($color, $value);;
+}
+
+@mixin bg-lighten ($color, $value: 10%) {
+    background: darken($color, $value);;
+}
+
+@mixin bx-shadow ($color: $black, $value: 10px) {
+    box-shadow: 0px 0px $value rgba($color, 0.5)
+}
+
+@mixin tx-shadow ($color: $black, $value: 10px) {
+    text-shadow: 0px 0px $value $color;
+}
+
+@mixin flex {
+    display: flex;
+    flex-wrap: wrap;
+}

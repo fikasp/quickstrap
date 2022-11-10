@@ -1,0 +1,31 @@
+.nav {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    z-index: 10;
+
+    @include large-up {
+        text-align: right;
+    }
+
+    &_item {
+        display: block;
+        color: $gray-light;
+        font-size: $font-size;
+        font-weight: 700;
+        padding: 5px;
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%;
+
+        &:hover {
+            color: $base-light;
+        }
+
+        @include medium-up {
+            display: inline-block;
+            margin: 0 $margin;
+            width: auto;
+        }
+    }
+}

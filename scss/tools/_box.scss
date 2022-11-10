@@ -1,0 +1,97 @@
+// $basic: (m: margin, p: padding, b: border);
+// $direction: (t: top, r: right, b: bottom, l: left);
+// $dimensions: (1: 2px, 2: 4px, 3: 10px, 4: 20px);
+
+// @each $a, $b in $basic {
+//     @each $c, $d in $dimensions {
+//         .#{$a}#{$c} {
+//             #{$b}: $d;
+//         }
+//         @each $e, $f in $direction {
+//             .#{$a}#{$e}#{$c} {
+//                 #{$b}-#{$f}: $d;
+//             }
+//         }
+//     }
+// }
+
+// Dimensions
+.vh {
+    height: 100vh;
+}
+.vw {
+    width: 100vw;
+}
+
+// Gutters
+
+.g1 {
+    padding: $gutter;
+}
+.g1 > * {
+    padding: $gutter;
+}
+
+.g2 {
+    padding: $gutter*2;
+}
+.g2 > * {
+    padding: $gutter*2;
+}
+
+// Paddings
+.p1 {
+    padding: $padding;
+}
+.p2 {
+    padding: $padding*2;
+}
+
+.ph1 {
+    padding-left: $padding;
+    padding-right: $padding;
+}
+.ph2 {
+    padding-left: $padding*2;
+    padding-right: $padding*2;
+}
+
+.pv1 {
+    padding-top: $padding;
+    padding-bottom: $padding;
+}
+.pv2 {
+    padding-top: $padding*2;
+    padding-bottom: $padding*2;
+}
+
+// Margins
+.mt1 {
+    margin-top: $margin;
+}
+.mt2 {
+    margin-top: $margin*2;
+}
+.mb1 {
+    margin-bottom: $margin;
+}
+.mb2 {
+    margin-bottom: $margin*2;
+}
+
+//Borders
+.bd1 {
+    border: 1px solid $gray-dark;
+}
+.bd2 {
+    border: 2px solid $gray-dark;
+}
+.br {
+    border-radius: $radius;
+}
+
+//Shadow
+.bs {
+    @include bx-shadow;
+}
+

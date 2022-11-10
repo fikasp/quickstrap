@@ -1,0 +1,17 @@
+.list {
+    font-size: $font-size;
+    line-height: $line-height;
+
+    &-unstyled li {
+        list-style-type: none;
+        @extend .list;
+    }
+    &-inline li {
+        display: inline-block;
+        @extend .list;
+    }
+
+    &_item {
+        margin: $margin;
+    }
+}

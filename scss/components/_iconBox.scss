@@ -1,0 +1,18 @@
+.iconBox {
+    display: block;
+    padding: 20px;
+    text-align: center;
+
+    &_image {
+        display: block;
+        margin: 0 auto;
+    }
+    &_heading {
+        font-size: 1rem;
+        text-transform: uppercase;
+        margin-top: 10px;
+    }
+    &_text {
+        font-size: 1rem;
+    }
+}

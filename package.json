@@ -1,0 +1,20 @@
+{
+  "name": "quickstrap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "ARW",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-cli": "^2.3.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "gulp-webserver": "^0.9.1",
+    "sass": "^1.53.0"
+  }
+}

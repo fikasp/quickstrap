@@ -1,0 +1,51 @@
+// Relative
+.pr {
+    position: relative;
+}
+
+// Absolute
+.pat {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.pab {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+// Fixed
+.pft {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.pfb {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+// Sticky
+.pst {
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+.psb {
+    z-index: 10;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+}
+
+// Z-index
+@for $i from 1 through 3 {
+    .z#{$i} {
+        z-index: $i
+    }
+}

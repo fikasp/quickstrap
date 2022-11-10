@@ -1,0 +1,51 @@
+// $basic: (b: background, c: color);
+// $colors: (w: white, b: black);
+
+// @each $a, $b in $selectors {
+//     @each $c, $d in $colors {
+//         .#{$a}#{$c} {
+//             #{$b}: $d;
+//         }
+//     }
+// }
+
+// Background
+.bgw {
+    background: $white;
+}
+.bgb {
+    background: $black;
+}
+.bgg {
+    background: $gray;
+}
+.bg1 {
+    background: $base;
+}
+.bg2 {
+    background: $sup-dark;
+}
+.bg3 {
+    background: $sub;
+}
+
+// Color
+.cw {
+    color: $white;
+}
+.cb {
+    color: $black;
+}
+.cg {
+    color: $gray;
+}
+.c1 {
+    color: $base;
+}
+.c2 {
+    color: $sup;
+}
+.c3 {
+    color: $sub;
+}
+

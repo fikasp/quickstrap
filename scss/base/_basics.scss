@@ -1,0 +1,58 @@
+html {
+    scroll-behavior: smooth;
+    line-height: $line-height;
+    font-family: $font-family;
+    font-size: $font-size;
+    @include medium-up {
+        font-size: calc($font-size * 1.125);
+    }
+    @include large-up {
+        font-size: calc($font-size * 1.25);
+    }
+}
+
+p {
+    font-weight: 500;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+h5 {
+    font-size: 0.75rem;
+}
+
+h6 {
+    font-size: 0.5rem;
+}
+
+a {
+    color: $gray-dark;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+    &:hover {
+        color: $gray-light;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+

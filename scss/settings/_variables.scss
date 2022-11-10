@@ -1,0 +1,63 @@
+// Colors
+$black:  #000;
+$gray-1: #111;
+$gray-2: #222;
+$gray-3: #333;
+$gray-4: #444;
+$gray-5: #555;
+$gray-6: #666;
+$gray-7: #777;
+$gray-8: #888;
+$gray-9: #999;
+$gray-a: #aaa;
+$gray-b: #bbb;
+$gray-c: #ccc;
+$gray-d: #ddd;
+$gray-e: #eee;
+$white:  #fff;
+
+$red:    #a42;
+$brown:  #a62;
+$orange: #c82;
+$yellow: #db4;
+$green:  #284;
+$blue:   #26c;
+$violet: #62c;
+$pink:   #a2a;
+
+$base:       #246;
+$base-dark:  darken($base, 20%);
+$base-light: lighten($base, 20%);
+
+$sup:        adjust-hue($base, 10deg);
+$sup-dark:   darken($sup, 10%);
+$sup-light:  lighten($sup, 10%);
+
+$sub:        adjust-hue($base, 120deg);
+$sub-dark:   darken($sub, 10%);
+$sub-light:  lighten($sub, 20%);
+
+$gray:       $gray-2;
+$gray-dark:  $gray-3;
+$gray-light: $gray-c;
+
+// Text
+$font-family: Play, Poppins, verdana, sans-serif;
+$font-size: 16px;
+$line-height: 1.5;
+
+// Layout
+$gutter: 5px;
+$padding: 10px;
+$margin: 10px;
+$radius: 10px;
+
+// Width
+$width-m: 740px;
+$width-l: 1140px;
+
+// Breakpoints
+$media-m: '800px';
+$media-l: '1200px';
+
+

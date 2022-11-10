@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+    background-image: url("../img/top.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+    height: 200px;
+
+    &_text {
+        font-size: 2rem;
+        text-transform: uppercase;
+        @include tx-shadow();
+    }
+}
+
+
