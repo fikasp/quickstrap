@@ -2,12 +2,13 @@
 @import 'settings/_variables';
 @import 'settings/_placeholders';
 @import 'settings/_mixins';
+@import 'themes/_themes';
 
 // @import 'base/_bootstrap';
 
 @import 'base/_reset';
 @import 'base/_basics';
-@import 'base/_flexbox';
+@import 'base/_flexgrid';
 
 @import 'layout/_header';
 @import 'layout/_section';
@@ -19,7 +20,9 @@
 @import 'components/_logo';
 @import 'components/_nav';
 
+
 @import 'tools/_box';
 @import 'tools/_colors';
+@import 'tools/_flexbox';
 @import 'tools/_position';
 @import 'tools/_text';
