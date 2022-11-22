@@ -1,9 +1,9 @@
-// Relative
+// relative
 .pr {
     position: relative;
 }
 
-// Absolute
+// absolute
 .pat {
     position: absolute;
     top: 0;
@@ -15,7 +15,7 @@
     left: 0;
 }
 
-// Fixed
+// fixed
 .pft {
     width: 100%;
     position: fixed;
@@ -29,7 +29,7 @@
     left: 0;
 }
 
-// Sticky
+// sticky
 .pst {
     z-index: 10;
     position: sticky;
@@ -43,7 +43,7 @@
     left: 0;
 }
 
-// Z-index
+// z-index
 @for $i from 1 through 3 {
     .z#{$i} {
         z-index: $i

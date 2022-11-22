@@ -352,30 +352,6 @@ img {
   }
 }
 
-.jcs {
-  justify-content: flex-start;
-}
-
-.jcc {
-  justify-content: center;
-}
-
-.jce {
-  justify-content: flex-end;
-}
-
-.acs {
-  align-content: flex-start;
-}
-
-.ace {
-  align-content: flex-end;
-}
-
-.aic {
-  align-items: center;
-}
-
 .header {
   display: flex;
   flex-wrap: wrap;
@@ -684,6 +660,30 @@ img {
 
 .c3 {
   color: #662244;
+}
+
+.jcs {
+  justify-content: flex-start;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+.jce {
+  justify-content: flex-end;
+}
+
+.acs {
+  align-content: flex-start;
+}
+
+.ace {
+  align-content: flex-end;
+}
+
+.aic {
+  align-items: center;
 }
 
 .pr {

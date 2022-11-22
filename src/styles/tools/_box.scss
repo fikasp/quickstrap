@@ -15,7 +15,7 @@
 //     }
 // }
 
-// Dimensions
+// dimensions
 .vh {
     height: 100vh;
 }
@@ -23,8 +23,7 @@
     width: 100vw;
 }
 
-// Gutters
-
+// gutters
 .g1 {
     padding: $gutter;
 }
@@ -39,7 +38,7 @@
     padding: $gutter*2;
 }
 
-// Paddings
+// paddings
 .p1 {
     padding: $padding;
 }
@@ -65,7 +64,7 @@
     padding-bottom: $padding*2;
 }
 
-// Margins
+// margins
 .mt1 {
     margin-top: $margin;
 }
@@ -79,7 +78,7 @@
     margin-bottom: $margin*2;
 }
 
-//Borders
+//borders
 .bd1 {
     border: 1px solid $gray-dark;
 }
@@ -90,7 +89,7 @@
     border-radius: $radius;
 }
 
-//Shadow
+//shadow
 .bs {
     @include bx-shadow;
 }

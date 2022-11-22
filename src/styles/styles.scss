@@ -1,26 +1,34 @@
-// Imports
+// settings
 @import 'settings/_variables';
 @import 'settings/_placeholders';
 @import 'settings/_mixins';
-@import 'themes/_themes';
 
+// bootstrap
 // @import 'base/_bootstrap';
 
+// base
 @import 'base/_reset';
 @import 'base/_basics';
 @import 'base/_flexgrid';
 
+//layout
 @import 'layout/_header';
 @import 'layout/_section';
 @import 'layout/_footer';
 
+// pages
+@import 'pages/_about';
+@import 'pages/_contact';
+@import 'pages/_gallery';
+
+// components
 @import 'components/_button';
 @import 'components/_iconBox';
 @import 'components/_list';
 @import 'components/_logo';
 @import 'components/_nav';
 
-
+// tools
 @import 'tools/_box';
 @import 'tools/_colors';
 @import 'tools/_flexbox';
