@@ -5,18 +5,18 @@ var webserver = require('gulp-webserver');
 
 gulp.task('assets', () => {
     return gulp.src('src/assets/**')
-    .pipe(gulp.dest('dest/assets'))
+    .pipe(gulp.dest('dist/assets'))
 })
 
 gulp.task('template', () => {
     return gulp.src('src/index.html')
-    .pipe(gulp.dest('dest'))
+    .pipe(gulp.dest('dist'))
 })
 
 gulp.task('styles', () => {
     return gulp.src('src/styles/styles.scss')
     .pipe(sass())
-    .pipe(gulp.dest('dest'))
+    .pipe(gulp.dest('dist'))
 })
 
 gulp.task('scripts', () => {
@@ -24,7 +24,7 @@ gulp.task('scripts', () => {
         'src/scripts/jquery.js',
         'src/scripts/scripts.js'])
     .pipe(concat('scripts.js'))
-    .pipe(gulp.dest('dest'))
+    .pipe(gulp.dest('dist'))
 })
 
 gulp.task('build', gulp.parallel('assets','template', 'styles', 'scripts'))
@@ -37,7 +37,7 @@ gulp.task('watch', () => {
 })
 
 gulp.task('webserver', () => {
-    return gulp.src('dest')
+    return gulp.src('dist')
     .pipe(webserver({
         livereload: true,
         open: true
