@@ -5,18 +5,18 @@ var webserver = require('gulp-webserver');
 
 gulp.task('assets', () => {
     return gulp.src('src/assets/**')
-    .pipe(gulp.dest('dist/assets'))
+    .pipe(gulp.dest('dest/assets'))
 })
 
 gulp.task('template', () => {
     return gulp.src('src/index.html')
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('dest'))
 })
 
 gulp.task('styles', () => {
     return gulp.src('src/styles/styles.scss')
     .pipe(sass())
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('dest'))
 })
 
 gulp.task('scripts', () => {
@@ -24,16 +24,10 @@ gulp.task('scripts', () => {
         'src/scripts/jquery.js',
         'src/scripts/scripts.js'])
     .pipe(concat('scripts.js'))
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('dest'))
 })
 
-gulp.task('webserver', () => {
-    return gulp.src('dist')
-    .pipe(webserver({
-        livereload: true,
-        open: true
-    }))
-})
+gulp.task('build', gulp.parallel('assets','template', 'styles', 'scripts'))
 
 gulp.task('watch', () => {
     gulp.watch('src/index.html', gulp.series('template'))
@@ -42,13 +36,14 @@ gulp.task('watch', () => {
     gulp.watch('src/assets/**', gulp.series('assets'))
 })
 
+gulp.task('webserver', () => {
+    return gulp.src('dest')
+    .pipe(webserver({
+        livereload: true,
+        open: true
+    }))
+})
+
 gulp.task('default', 
-    gulp.parallel(
-        'assets',
-        'template', 
-        'styles', 
-        'scripts',
-        'webserver',
-        'watch', 
-    )
+    gulp.series('build','webserver','watch')
 )
